@@ -1,0 +1,10 @@
+<Game
+	rootOfLevelFile="./resources/">
+	<Menu
+		BackgroundTexture="level_background/star-pattern.bmp"
+		BackgroundMusic="music.wav">
+	</Menu>
+	<Levels>
+	intro test end
+	</Levels>
+</Game>

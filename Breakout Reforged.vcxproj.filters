@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{3a52aa1e-ded5-40be-b477-49b6eaeec52e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShapedObject">
+      <UniqueIdentifier>{15e8f060-6490-4559-a376-9629a626dbef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShapedObject\Circle">
+      <UniqueIdentifier>{058ca1c8-b590-424e-8ef0-b3fec3e3bae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoundObject">
+      <UniqueIdentifier>{d88c06d6-264f-4b97-bae4-2b27c3d344c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{53e14c65-7425-4066-b20f-1436d5ca7864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{6a8aa77c-41af-4374-a562-5fbe7a7cb2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShapedObject\Rectangle">
+      <UniqueIdentifier>{6262b058-7699-46d9-8e30-c6891c7c5464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Ball">
+      <UniqueIdentifier>{f1f47956-cdcb-4753-bb93-bd4c82bf8cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Brick">
+      <UniqueIdentifier>{77adcaa0-426e-48a2-9bf8-4994c59f9dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Brick\BrickTypes">
+      <UniqueIdentifier>{c8a44c5f-8c4d-4964-8d2e-a541ae0520ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Platform">
+      <UniqueIdentifier>{dae8d17e-dfac-4738-8b10-b63edeed76e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XMLParser">
+      <UniqueIdentifier>{66f56bc9-b4c1-411d-b4ce-53b61d03bbf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{7f4c69fe-95ed-4474-be36-8cb7abd39849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Screen">
+      <UniqueIdentifier>{c35cd061-96ad-4b0f-9d77-c69b3cf12aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Screen\Level">
+      <UniqueIdentifier>{a73dbcd4-2e38-47ac-be0b-c7059ee25031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Screen\Menu">
+      <UniqueIdentifier>{35a14676-bcf4-4875-82b6-d18206a890ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\circle\Circle.cpp">
+      <Filter>ShapedObject\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\game\game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\rectangle\Rectangle.cpp">
+      <Filter>ShapedObject\Rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\ball\Ball.cpp">
+      <Filter>Entities\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\shaped_object\ShapedObject.cpp">
+      <Filter>ShapedObject</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\brick\Brick.cpp">
+      <Filter>Entities\Brick</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\platform\Platform.cpp">
+      <Filter>Entities\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\level\Level.cpp">
+      <Filter>Game\Screen\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\timer\Timer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\scene\Scene.cpp">
+      <Filter>Game\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\scene\SceneFactory.cpp">
+      <Filter>Game\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\menu\Menu.cpp">
+      <Filter>Game\Screen\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\brick_type\BrickEnforcement.cpp">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\brick_type\HardBrick.cpp">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\brick_type\InvicibleBrick.cpp">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\brick_type\MediumBrick.cpp">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\brick_type\WeakBrick.cpp">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\xml_parser\XMLParser.cpp">
+      <Filter>XMLParser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\circle\Circle.h">
+      <Filter>ShapedObject\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\game\game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\shaped_object\ShapedObject.h">
+      <Filter>ShapedObject</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\interfaces\IDrawable.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\interfaces\IPlayable.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\sound_object\SoundObject.h">
+      <Filter>SoundObject</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\interfaces\IMovable.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\rectangle\Rectangle.h">
+      <Filter>ShapedObject\Rectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\ball\Ball.h">
+      <Filter>Entities\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\brick\Brick.h">
+      <Filter>Entities\Brick</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\interfaces\IHitObservation.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\interfaces\IBreakObservation.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\platform\Platform.h">
+      <Filter>Entities\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\level\Level.h">
+      <Filter>Game\Screen\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\interfaces\IPresentable.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\timer\Timer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\scene\Scene.h">
+      <Filter>Game\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\scene\SceneFactory.h">
+      <Filter>Game\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\menu\Menu.h">
+      <Filter>Game\Screen\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\brick_type\BrickEnforcement.h">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\brick_type\HardBrick.h">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\brick_type\InvicibleBrick.h">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\brick_type\MediumBrick.h">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\brick_type\WeakBrick.h">
+      <Filter>Entities\Brick\BrickTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\xml_parser\XMLParser.h">
+      <Filter>XMLParser</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\level_background\star-pattern.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

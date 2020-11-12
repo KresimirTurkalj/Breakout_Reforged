@@ -1,0 +1,5 @@
+<Scene
+	SceneDoc = "menu.xml"
+	BackgroundTexture = "intro/board.bmp"
+	BackgroundMusic = "intro/music.bmp">
+</Scene>

@@ -1,0 +1,6 @@
+<Game
+	rootOfLevelFile="./resources/"
+	<Scenes>
+	menu intro test end
+	</Scenes>
+</Game>

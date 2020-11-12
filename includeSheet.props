@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SDL>$(SolutionDir)library\SDL2-2.0.12\include</SDL>
+    <SDLib>$(SolutionDir)library\SDL2-2.0.12\lib\x64</SDLib>
+    <Source>$(SolutionDir)sources</Source>
+    <TXML2>$(SolutionDir)library\tinyxml2</TXML2>
+    <SDL_Mixer>$(SolutionDir)library\SDL2_mixer-2.0.4\include</SDL_Mixer>
+    <SDL_MixerLib>$(SolutionDir)library\SDL2_mixer-2.0.4\lib\x64</SDL_MixerLib>
+    <Boost>$(SolutionDir)\library\boost_1_74_0</Boost>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_PropertySheetDisplayName>Library</_PropertySheetDisplayName>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="SDL">
+      <Value>$(SDL)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDLib">
+      <Value>$(SDLib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="Source">
+      <Value>$(Source)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TXML2">
+      <Value>$(TXML2)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDL_Mixer">
+      <Value>$(SDL_Mixer)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDL_MixerLib">
+      <Value>$(SDL_MixerLib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="Boost">
+      <Value>$(Boost)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+C:\dev\cpp\Breakout Reforged\x64\Debug\Breakout Reforged.exe
+C:\dev\cpp\Breakout Reforged\x64\Debug\Breakout Reforged.pdb
