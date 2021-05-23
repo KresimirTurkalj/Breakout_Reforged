@@ -9,6 +9,10 @@
     <SDL_Mixer>$(SolutionDir)library\SDL2_mixer-2.0.4\include</SDL_Mixer>
     <SDL_MixerLib>$(SolutionDir)library\SDL2_mixer-2.0.4\lib\x64</SDL_MixerLib>
     <Boost>$(SolutionDir)\library\boost_1_74_0</Boost>
+    <SDL_Image>C:\dev\cpp\Breakout_Reforged\library\SDL2_image-2.0.5\include</SDL_Image>
+    <SDL_ImageLib>C:\dev\cpp\Breakout_Reforged\library\SDL2_image-2.0.5\lib\x64</SDL_ImageLib>
+    <SDL_ttf>C:\dev\cpp\Breakout_Reforged\library\SDL2_ttf-2.0.15\include</SDL_ttf>
+    <SDL_ttfLib>C:\dev\cpp\Breakout_Reforged\library\SDL2_ttf-2.0.15\lib\x64</SDL_ttfLib>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>Library</_PropertySheetDisplayName>
@@ -20,6 +24,7 @@
     </BuildMacro>
     <BuildMacro Include="SDLib">
       <Value>$(SDLib)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="Source">
       <Value>$(Source)</Value>
@@ -32,9 +37,23 @@
     </BuildMacro>
     <BuildMacro Include="SDL_MixerLib">
       <Value>$(SDL_MixerLib)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="Boost">
       <Value>$(Boost)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDL_Image">
+      <Value>$(SDL_Image)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDL_ImageLib">
+      <Value>$(SDL_ImageLib)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SDL_ttf">
+      <Value>$(SDL_ttf)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDL_ttfLib">
+      <Value>$(SDL_ttfLib)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

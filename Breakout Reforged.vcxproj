@@ -19,51 +19,52 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sources\ball\Ball.cpp" />
-    <ClCompile Include="sources\brick\Brick.cpp" />
-    <ClCompile Include="sources\brick_type\BrickEnforcement.cpp" />
-    <ClCompile Include="sources\brick_type\HardBrick.cpp" />
-    <ClCompile Include="sources\brick_type\InvicibleBrick.cpp" />
-    <ClCompile Include="sources\brick_type\MediumBrick.cpp" />
-    <ClCompile Include="sources\brick_type\WeakBrick.cpp" />
-    <ClCompile Include="sources\circle\Circle.cpp" />
-    <ClCompile Include="sources\game\game.cpp" />
-    <ClCompile Include="sources\level\Level.cpp" />
+    <ClCompile Include="library\tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="sources\Drawables\Background.cpp" />
+    <ClCompile Include="sources\Drawables\FPSCounter.cpp" />
+    <ClCompile Include="sources\Drawables\KeyShower.cpp" />
+    <ClCompile Include="sources\Drawables\Label.cpp" />
+    <ClCompile Include="sources\EventInterfaces\EventProcessor.cpp" />
+    <ClCompile Include="sources\EventInterfaces\IPositionable.cpp" />
+    <ClCompile Include="sources\GameEngine\Engine.cpp" />
     <ClCompile Include="sources\main.cpp" />
-    <ClCompile Include="sources\menu\Menu.cpp" />
-    <ClCompile Include="sources\platform\Platform.cpp" />
-    <ClCompile Include="sources\rectangle\Rectangle.cpp" />
-    <ClCompile Include="sources\scene\Scene.cpp" />
-    <ClCompile Include="sources\scene\SceneFactory.cpp" />
-    <ClCompile Include="sources\shaped_object\ShapedObject.cpp" />
-    <ClCompile Include="sources\timer\Timer.cpp" />
+    <ClCompile Include="sources\Physics\CircleObject.cpp" />
+    <ClCompile Include="sources\Physics\Object2D.cpp" />
+    <ClCompile Include="sources\Physics\Physics2D.cpp" />
+    <ClCompile Include="sources\Physics\RectangleObject.cpp" />
+    <ClCompile Include="sources\Rudimentary\ClickableItem.cpp" />
+    <ClCompile Include="sources\Rudimentary\DrawableItem.cpp" />
+    <ClCompile Include="sources\Rudimentary\Renderer.cpp" />
+    <ClCompile Include="sources\Rudimentary\Texture.cpp" />
+    <ClCompile Include="sources\Rudimentary\Window.cpp" />
+    <ClCompile Include="sources\TextureLoaders\SDLInit.cpp" />
+    <ClCompile Include="sources\Windows\MainWindow\MainWindow.cpp" />
     <ClCompile Include="sources\xml_parser\XMLParser.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sources\ball\Ball.h" />
-    <ClInclude Include="sources\brick\Brick.h" />
-    <ClInclude Include="sources\brick_type\BrickEnforcement.h" />
-    <ClInclude Include="sources\brick_type\HardBrick.h" />
-    <ClInclude Include="sources\brick_type\InvicibleBrick.h" />
-    <ClInclude Include="sources\brick_type\MediumBrick.h" />
-    <ClInclude Include="sources\brick_type\WeakBrick.h" />
-    <ClInclude Include="sources\circle\Circle.h" />
-    <ClInclude Include="sources\game\game.h" />
-    <ClInclude Include="sources\interfaces\IBreakObservation.h" />
-    <ClInclude Include="sources\interfaces\IDrawable.h" />
-    <ClInclude Include="sources\interfaces\IHitObservation.h" />
-    <ClInclude Include="sources\interfaces\IMovable.h" />
-    <ClInclude Include="sources\interfaces\IPlayable.h" />
-    <ClInclude Include="sources\interfaces\IPresentable.h" />
-    <ClInclude Include="sources\level\Level.h" />
-    <ClInclude Include="sources\menu\Menu.h" />
-    <ClInclude Include="sources\platform\Platform.h" />
-    <ClInclude Include="sources\rectangle\Rectangle.h" />
-    <ClInclude Include="sources\scene\Scene.h" />
-    <ClInclude Include="sources\scene\SceneFactory.h" />
-    <ClInclude Include="sources\shaped_object\ShapedObject.h" />
-    <ClInclude Include="sources\sound_object\SoundObject.h" />
-    <ClInclude Include="sources\timer\Timer.h" />
+    <ClInclude Include="library\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="sources\Drawables\Background.h" />
+    <ClInclude Include="sources\Drawables\FPSCounter.h" />
+    <ClInclude Include="sources\Drawables\KeyShower.h" />
+    <ClInclude Include="sources\Drawables\Label.h" />
+    <ClInclude Include="sources\EventInterfaces\IDrawable.h" />
+    <ClInclude Include="sources\EventInterfaces\EventProcessor.h" />
+    <ClInclude Include="sources\EventInterfaces\IKeyboardEvents.h" />
+    <ClInclude Include="sources\EventInterfaces\IMouseEvents.h" />
+    <ClInclude Include="sources\EventInterfaces\IPositionable.h" />
+    <ClInclude Include="sources\EventInterfaces\IUpdatable.h" />
+    <ClInclude Include="sources\GameEngine\Engine.h" />
+    <ClInclude Include="sources\Physics\CircleObject.h" />
+    <ClInclude Include="sources\Physics\Object2D.h" />
+    <ClInclude Include="sources\Physics\Physics2D.h" />
+    <ClInclude Include="sources\Physics\RectangleObject.h" />
+    <ClInclude Include="sources\Rudimentary\ClickableItem.h" />
+    <ClInclude Include="sources\Rudimentary\DrawableItem.h" />
+    <ClInclude Include="sources\Rudimentary\Renderer.h" />
+    <ClInclude Include="sources\Rudimentary\Texture.h" />
+    <ClInclude Include="sources\Rudimentary\Window.h" />
+    <ClInclude Include="sources\TextureLoaders\SDLInit.h" />
+    <ClInclude Include="sources\Windows\MainWindow\MainWindow.h" />
     <ClInclude Include="sources\xml_parser\XMLParser.h" />
   </ItemGroup>
   <ItemGroup>
@@ -126,8 +127,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(Boost);$(Source);$(TXML2);$(SDL);$(SDL_Mixer);$(IncludePath)</IncludePath>
-    <LibraryPath>$(SDLib);$(SDL_MixerLib);$(LibraryPath);</LibraryPath>
+    <IncludePath>$(Boost);$(Source);$(TXML2);$(SDL);$(SDL_Mixer);$(SDL_Image);$(SDL_ttf);$(IncludePath)</IncludePath>
+    <LibraryPath>$(SDLib);$(SDL_MixerLib);$(SDL_ImageLib);$(SDL_ttfLib);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -157,7 +158,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

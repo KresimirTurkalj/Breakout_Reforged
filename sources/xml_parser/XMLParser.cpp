@@ -1,6 +1,5 @@
 #include "XMLParser.h"
 #include <vector>
-#include <boost/algorithm/string.hpp>
 
 using namespace tinyxml2;
 XMLParser::SceneInfo XMLParser::getSceneInfoFrom(std::string fileLocation, SDL_Surface* parentSurface) {
@@ -32,6 +31,11 @@ XMLParser::GameInfo XMLParser::getGameInfoFrom(std::string fileLocation) {
 	return gI;
 }
 
+XMLParser::LevelInfo XMLParser::getLevelInfoFrom(std::string fileLocation)
+{
+	return LevelInfo();
+}
+
 std::string XMLParser::cleanString(const char* string)
 {
 	std::string stringOfNames(string);
@@ -40,12 +44,17 @@ std::string XMLParser::cleanString(const char* string)
 	return stringOfNames;
 }
 
+const tinyxml2::XMLElement* XMLParser::getLevelElement(std::string fileLocation)
+{
+	return nullptr;
+}
+
 std::vector<std::string> XMLParser::getVectorOfLevelNames(const char* string)
 {
-	using namespace boost::algorithm;
+	//using namespace boost::algorithm;
 	std::string stringOfNames(string);
 	std::vector<std::string> stringVector;
-	split(stringVector, stringOfNames, is_any_of("\t\n ,"));
+	//split(stringVector, stringOfNames, is_any_of("\t\n ,"));
 	stringVector.erase(remove(stringVector.begin(), stringVector.end(), ""), stringVector.end());
 	return stringVector;
 }

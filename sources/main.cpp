@@ -2,19 +2,12 @@
 and may not be redistributed without written permission.*/
 
 //Using SDL and standard IO
-#include <SDL.h>
-#include "game/game.h"
+#include "GameEngine/Engine.h"
 #include <iostream>
-
 
 int main( int argc, char* args[] )
 {	
-	std::cout << "Start\n";
-	Game* game = new Game();
-	std::cout << "Loop start\n";
-	game->loop();
-	std::cout << "Loop end\n";
-	delete game;
-	std::cout << "End\n";
+	auto engine = std::make_unique<Engine>();
+	engine->startLoop();
 	return 0;
 }
